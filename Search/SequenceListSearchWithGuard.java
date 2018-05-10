@@ -25,23 +25,23 @@ public class SequenceListSearchWithGuard {
     }
 
     private static int searchInSequenceListWithGuard(int[] list, int target) {
-		int i = list.length - 1;
-		while (target != list[i]) {
-			i--;
-		}
+        int i = list.length - 1;
+        while (target != list[i]) {
+            i--;
+        }
 
         return i;
     }
-	
+
     private static int[] readIntArray() {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your integer array: ");
         try {
             String[] arrayStr = bufferedReader.readLine().split(" ");
             int[] intArray = new int[arrayStr.length + 1];
-			intArray[0] = mTarget;
+            intArray[0] = mTarget;
             for (int i = 0; i < arrayStr.length; i++) {
-                intArray[i+1] = Integer.parseInt(arrayStr[i]);
+                intArray[i + 1] = Integer.parseInt(arrayStr[i]);
             }
             return intArray;
         } catch (IOException e) {
