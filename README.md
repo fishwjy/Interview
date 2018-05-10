@@ -53,8 +53,8 @@
 1. 顺序查找
     * 时间复杂度：O(n)
 	* 设置哨兵位，以便减少循环中检查数组是否越界的操作，可以提高查找效率
-	* SequenceListSearch
-	* SequenceListSearchWithGuard
+	* [SequenceListSearch](https://github.com/fishwjy/Interview/blob/master/Search/SequenceListSearch.java "SequenceListSearch")
+	* [SequenceListSearchWithGuard](https://github.com/fishwjy/Interview/blob/master/Search/SequenceListSearchWithGuard.java "SequenceListSearchWithGuard")
 2. 折半查找(二分查找)：
     * 前提：表有序，顺序存储
     * 时间复杂度：O(n)
