@@ -52,9 +52,8 @@
 > 查找分为：**静态查找**(只做查找操作)和**动态查找**(查找过程中需要删除或增加操作)
 1. 顺序查找
     * 时间复杂度：O(n)
-	* 设置哨兵位，以便减少循环中检查数组是否越界的操作，可以提高查找效率
 	* [SequenceListSearch](https://github.com/fishwjy/Interview/blob/master/Search/SequenceListSearch.java "SequenceListSearch")
-	* [SequenceListSearchWithGuard](https://github.com/fishwjy/Interview/blob/master/Search/SequenceListSearchWithGuard.java "SequenceListSearchWithGuard")
+	* [SequenceListSearchWithGuard](https://github.com/fishwjy/Interview/blob/master/Search/SequenceListSearchWithGuard.java "SequenceListSearchWithGuard")设置哨兵位，以便减少循环中检查数组是否越界的操作，可以提高查找效率
 2. 折半查找(二分查找)：
     * 前提：表有序，顺序存储
     * 时间复杂度：O(n)
