@@ -61,6 +61,5 @@
 3. 插值查找：
     * 前提：表有序，顺序存储
     * 时间复杂度：O(logn)
-	* 对于表长较大，关键字分布比较均匀的表来说，插值查找的性能比折半查找要好很多
-	* [InterpolationSearch](https://github.com/fishwjy/Interview/blob/master/Search/InterpolationSearch.java "InterpolationSearch")
+	* [InterpolationSearch](https://github.com/fishwjy/Interview/blob/master/Search/InterpolationSearch.java "InterpolationSearch")对于表长较大，关键字分布比较均匀的表来说，插值查找的性能比折半查找要好很多
 	
