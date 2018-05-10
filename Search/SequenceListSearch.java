@@ -11,7 +11,8 @@ public class SequenceListSearch {
 
     /**
      * 顺序查找
-     * @param list 待查找的顺序表
+     *
+     * @param list   待查找的顺序表
      * @param target 查找目标
      * @return 命中目标的下标，-1为没有找到
      */
@@ -46,6 +47,7 @@ public class SequenceListSearch {
 
     /**
      * 从终端读取整形数组
+     *
      * @return 用户输入的整形数组
      */
     private static int[] readIntArray() {

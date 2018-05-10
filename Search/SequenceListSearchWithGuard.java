@@ -11,11 +11,12 @@ public class SequenceListSearchWithGuard {
 
     /**
      * 带哨兵位的顺序查找
-     * @param list 待查找的顺序表
+     *
+     * @param list   待查找的顺序表
      * @param target 查找目标
      * @return 命中目标的下标，0为没有找到
      */
-	private static int searchInSequenceListWithGuard(int[] list, int target) {
+    private static int searchInSequenceListWithGuard(int[] list, int target) {
         int i = list.length - 1;
         while (target != list[i]) {
             i--;
@@ -45,6 +46,7 @@ public class SequenceListSearchWithGuard {
 
     /**
      * 从终端读取整形数组
+     *
      * @return 用户输入的整形数组整形数组
      */
     private static int[] readIntArray() {
