@@ -2,10 +2,30 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * 最普通的顺序表查询
+ */
+
 public class SequenceListSearch {
     private static int mTarget;
 
-    public static void main(String[] args) throws java.lang.Exception {
+    /**
+     * 顺序查找
+     * @param list 待查找的顺序表
+     * @param target 查找目标
+     * @return 命中目标的下标，-1为没有找到
+     */
+    private static int searchInSequenceList(int[] list, int target) {
+        for (int i = 0; i < list.length; i++) {
+            if (list[i] == target) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    public static void main(String[] args) throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your target integer: ");
         try {
@@ -24,16 +44,10 @@ public class SequenceListSearch {
         System.exit(0);
     }
 
-    private static int searchInSequenceList(int[] list, int target) {
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] == target) {
-                return i;
-            }
-        }
-
-        return -1;
-    }
-	
+    /**
+     * 从终端读取整形数组
+     * @return 用户输入的整形数组
+     */
     private static int[] readIntArray() {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your integer array: ");
