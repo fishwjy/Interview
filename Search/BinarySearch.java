@@ -10,34 +10,30 @@ import java.io.InputStreamReader;
 public class BinarySearch {
     private static int mTarget;
 
+    /**
+     * 折半查找
+     *
+     * @param list   待查找的有序表
+     * @param target 查找目标
+     * @return 命中目标的下标，-1为没有找到
+     */
     private static int binarySearch(int[] list, int target) {
-        int low = 0;
-        int high = list.length - 1;
-        int mid = (low + high) / 2;
+        int low, mid, high;
+        low = 0;
+        high = list.length - 1;
 
-        while (list[mid] != target) {
-            if (target < list[mid]) {
-                high = mid;
-            }
-
-            if (target > list[mid]) {
-                low = mid;
-            }
-
+        while (low <= high) {
             mid = (low + high) / 2;
-
-            if (mid == low || mid == high) {
-                if (list[low] == target) {
-                    return low;
-                } else if (list[high] == target) {
-                    return high;
-                } else {
-                    return -1;
-                }
+            if (target < list[mid]) {
+                high = mid - 1;
+            } else if (target > list[mid]) {
+                low = mid + 1;
+            } else {
+                return mid;
             }
         }
 
-        return mid;
+        return -1;
     }
 
     public static void main(String[] args) throws Exception {
